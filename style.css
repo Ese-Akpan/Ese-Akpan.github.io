@@ -26,23 +26,23 @@ body {
 .header-text-container {
   background-color: #1E3A5F;   /* Dark blue color */
   color: white;                 /* White text */
-  padding: 20px;
+  padding: 30px;                /* Increased padding for larger text */
   flex: 1;                       /* Allow it to take half the space */
   border-radius: 8px;           /* Rounded corners for the text container */
   max-width: 50%;                /* Limit the width to 50% of the header */
 }
 
 .header-text-container h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 36px;              /* Larger font size for the header */
+  margin-bottom: 15px;
 }
 
 .header-text-container p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;              /* Larger font size for the paragraph */
+  line-height: 1.8;             /* Adjust line height for better readability */
 }
 
-/* Image Container (Rectangle) */
+/* Image Container (Portrait Shape) */
 .header-image-container {
   flex: 1;                       /* Image container takes up the other 50% */
   max-width: 50%;                 /* Limit the width to 50% of the header */
@@ -51,8 +51,8 @@ body {
 }
 
 .profile-pic {
-  width: 180px;                  /* Set the width of the rectangle image */
-  height: 120px;                 /* Set the height */
+  width: 160px;                  /* Set the width of the square image */
+  height: 240px;                 /* Set the height longer than the width (portrait) */
   object-fit: cover;             /* Ensure the image covers the area without stretching */
   border-radius: 8px;            /* Optional: rounded corners */
   border: 3px solid white;
@@ -65,8 +65,8 @@ section {
 }
 
 h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 /* Mobile responsiveness */

@@ -135,11 +135,20 @@
             <p>linkedin.com/in/eseabasi-akpan</p>
           </div>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        <form
+          action="https://formspree.io/f/myzwdprn"
+          method="POST"
+        >
+          <label>
+            Your email:
+            <input type="email" name="email">
+          </label>
+          <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
         </form>
       </div>
       <a href="#header" class="scroll-arrow top-arrow">

@@ -14,46 +14,48 @@ body {
   padding: 20px;
 }
 
-/* Header container with text and image side by side */
+/* Header Container */
 .header-container {
-  display: flex;              /* Make them sit side by side */
-  justify-content: space-between;  /* Space between text and image */
-  align-items: center;        /* Vertically align */
-  padding: 40px 20px;
+  display: flex;              /* Align text and image side by side */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #3498db;   /* Blue color */
+  border-radius: 8px;
   margin-bottom: 40px;
 }
 
-/* Text container styles */
-.text-column {
-  flex: 1;                    /* Take up half the space */
+/* Header Text Container */
+.header-text-container {
+  flex: 1;                    /* Text takes half of the space */
   max-width: 50%;              /* Limit to 50% of the container */
   padding-right: 20px;
+  color: white;               /* White text color */
 }
 
-.text-column h1 {
+.header-text-container h1 {
   font-size: 32px;
   margin-bottom: 10px;
 }
 
-.text-column p {
+.header-text-container p {
   font-size: 18px;
   line-height: 1.6;
 }
 
-/* Image container styles */
-.image-column {
-  flex: 1;                    /* Take up half the space */
+/* Image Container (Rectangle) */
+.header-image-container {
+  flex: 1;                    /* Image takes half of the space */
   max-width: 50%;              /* Limit to 50% of the container */
   display: flex;
-  justify-content: center;     /* Center image */
+  justify-content: center;     /* Center image inside the container */
 }
 
-/* Profile picture styles */
 .profile-pic {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;         /* Makes it a circle */
-  object-fit: cover;          /* Ensures image doesn't stretch */
+  width: 180px;               /* Set a specific width for the rectangular image */
+  height: 120px;              /* Set a specific height */
+  object-fit: cover;          /* Ensures image fits within the rectangle without stretching */
+  border-radius: 8px;         /* Optional: Give the image rounded corners */
   border: 3px solid white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -71,16 +73,17 @@ h2 {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column;    /* Stack text and image vertically */
-    align-items: center;       /* Center all content */
+    flex-direction: column;    /* Stack text and image vertically on mobile */
+    align-items: center;       /* Center everything */
   }
 
-  .text-column, .image-column {
+  .header-text-container, .header-image-container {
     max-width: 100%;
-    padding: 10px 0;           /* Add padding for better spacing */
+    padding: 10px 0;
+    justify-content: center;
   }
 
-  .image-column {
-    justify-content: center;   /* Center the image */
+  .header-image-container {
+    justify-content: center;
   }
 }

@@ -1,40 +1,37 @@
-/* Full-height sections */
-.section {
-  height: 100vh;
+/* Header Layout */
+.header-container {
+  display: flex;
+  height: 100%;
   width: 100%;
+}
+
+/* Text Side */
+.header-text-container {
+  background-color: #1E3A5F;
+  color: white;
+  flex: 1;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+}
+
+/* Image Side */
+.header-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Optional: light background */
   padding: 40px;
-  box-sizing: border-box;
 }
 
-/* Arrow at bottom-right */
-.scroll-arrow {
-  font-size: 40px;
-  color: #007bff;
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  text-decoration: none;
-  animation: bounce 1.5s infinite;
-}
-
-/* Bounce animation */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-/* Smooth scroll for anchor links */
-html {
-  scroll-behavior: smooth;
+/* Profile Image */
+.profile-pic {
+  width: auto;
+  height: 400px;  /* Set a reasonable height */
+  max-width: 100%;  /* So it doesn’t overflow horizontally */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }

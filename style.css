@@ -103,20 +103,34 @@ section a:hover {
 }
 .header-container {
   display: flex;
+  flex-direction: row;         /* row = side-by-side */
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;             /* allows stacking on small screens */
 }
 
 .profile-pic {
-  width: 120px;
-  border-radius: 120px%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
   border: 3px solid white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-text {
-  text-align: left;
   max-width: 600px;
 }
+
+.header-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+

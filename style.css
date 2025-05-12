@@ -626,3 +626,23 @@ form[action="https://formspree.io/f/myzwdprn"] button[type="submit"]::after {
 .about-image {
   animation: fadeInUp 1s ease 0.2s both;
 }
+/* Contact Link Styling */
+.contact-item a.contact-link {
+  color: inherit; /* Keeps the original text color */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease;
+  cursor: pointer; /* Shows hand cursor on hover */
+}
+
+.contact-item a.contact-link:hover {
+  color: var(--primary-color); /* Optional: adds hover effect */
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+/* Maintain original spacing and alignment */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
